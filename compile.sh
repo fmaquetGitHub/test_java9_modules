@@ -1,9 +1,11 @@
 #!/bin/bash
 
-rm -rf classes/main
-rm -rf classes/outils
+rm -rf modules
 
-javac -sourcepath src src/main/Main.java -d classes
+javac -d modules/com.greetings \
+        src/com.greetings/module-info.java \
+        src/com.greetings/com/greetings/Main.java
+        
 
-# ATTENTION il faut bien le sourcepath si tu fais : javac src/main/*.java -d classes ==> KO
-
+        
+        
