@@ -1,3 +1,3 @@
 #!/bin/bash
 
-java -classpath classes/ main.Main
+java --module-path modules -m com.norsys/norsys.main.Main
